@@ -1,0 +1,147 @@
+<!DOCTYPE html> <!--Declares this doctype is html-->
+
+<html> <!--Root element of html page-->
+    <head> <!--Information about webpage-->
+        <title>My first website</title>
+    </head>
+    <body> <!--Contains visible content about the webpage-->
+        <h1>This is an h1 heading</h1> <!--Largest heading-->
+        <h2>This is an h2 heading</h2>
+        <h3>This is an h3 heading</h3>
+        <h4>This is an h4 heading</h4>
+        <h5>This is an h5 heading</h5>
+
+        <br> <!--Line break-->
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim soluta ipsa laudantium, praesentium mollitia dolorem ipsam adipisci nam officia minima? Distinctio enim cumque aliquid impedit ipsum deleniti minus nulla omnis!</p>
+        <pre>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Beatae consequatur perspiciatis quibusdam. Nisi eligendi 
+        incidunt vitae quasi ipsum laborum, est sint. Recusandae 
+        commodi sequi explicabo delectus numquam eius. Enim, tempora!</pre>
+        <hr> <!--Horizontal Lines-->
+
+        <a href = "https://www.google.com/"
+        target = "_blank"
+        title = "goes to google">click me</a> <!--Anchor tag, Hyperlinks-->
+        
+        <br>
+
+        <a href = lyrics.html>Song Lyrics</a>
+        <br>
+        <a href = "mailto:testemail@gmail.com">Email Me</a>
+        <br>
+
+        <a href = "https://google.com">
+        <img src = "webpic.jpg"
+        alt = "This is a picture of a statue" 
+        height = "200"> <!--Width changes automatically, but can set it, good practice to add alt text -->
+        </a> <!--Makes the image a link-->
+
+        <!--Can do the same with images but with gifs, just change the source page-->
+        <!--If you have the images in the folder, change the img src to img src = /foldername/filename.ext-->
+        <!--audio includiosn uses audio tags, <audio controls autoplay muted loop> <source src = ""> <audio>, with the src being the file path and extension-->
+        <!-- <audio controls autoplay muted loop>
+                <source src = "music/Catch me if I fall.mp3" type = "audio/mpeg3">
+                <source src = "music/Catch me if I fall.wav" type = "audio/wav">
+             </audio>
+            -->
+
+        <!--Video-->
+        <!--
+            <video width = "200px" controls autoplay muted loop> </video>
+                <source src = "zelda.mp4" type = "video/mp4">
+
+        -->
+        
+        <!--Favicon-->
+        <!--
+           <link rel = "icon" type = "image/jpg" href = "favicon.jpg"> Specifies relationship between this document and external source
+        -->
+
+        <!--
+            <p> This is <b>bolded<b> text</p>
+                <i> italic 
+                <u> underline 
+                <big> big text 
+                <small> small text 
+                <del> deleted 
+                <sub> subscript 
+                <super> superscript 
+                <tt> monospaced 
+                <mark> highlight
+
+        -->
+        <!--Span is inline container, div is block container, all to group elements together for styling purposes -->
+
+        <h1><span style = "background-color: tomato;">This is a span</span></h1>
+        <h1><div style = "background-color: aqua;">This is a div</div></h1>
+
+        <!--Lists-->
+        <!--Unordered Lists-->
+        <h4>Groceries</h4>
+        <ul>
+            <li>milk</li>
+            <li>eggs</li>
+            <li>Coffee Supplies</li>
+            <ul>
+                <li>Beans</li>
+            </ul>
+        </ul>
+        <!--Ordered Lists-->
+        <h4>Groceries</h4>
+        <ol>
+            <li>eat breakfast</li>
+            <li>poop</li>
+        </ol>
+        <!--Description Lists-->
+        <dl>
+            <dt>dragon</dt>
+            <dd>Harry Potter</dd>
+            <dt>Phoenix</dt>
+            <dd>Also harry potter</dd>
+        </dl>
+
+        <!--Tables-->
+        <table> <!--Border Style = Color-->
+            <tr> <!--Table Headers, Alignment-->
+                <th>Sun</th> <!--Width-->
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+            <tr>
+                <td>Closed</td>
+                <td>Closed</td>
+                <td>Closed</td>
+                <td>Closed</td>
+                <td>Closed</td>
+                <td>Closed</td>
+                <td>Closed</td>
+            </tr>
+        </table>
+
+        <!--Button-->
+
+        <a href = "https://google.com">
+        <button onclick = "doSomething()" style = "font-size: 25px; background-color: grey; color:aqua; border-radius: 25; border-collapse: separate;">Click Me</button>
+        </a>
+
+        <!--Make the button do something-->
+        <p id = "greeting">Hello</p>
+        <script>
+            function doSomething() {
+                document.getElementById("greeting").innerHTML = "Goodbye"
+            }
+        </script>
+
+        <!--Forms--> <!--Method = Post, for sensitive data, get for whatever data-->
+        <!--Headers and Footers-->
+        <!--
+            Use headers, footers, and main tags to split up the page and make CSS application easier but only on headers and footers
+        -->
+
+    </body>
+</html>
