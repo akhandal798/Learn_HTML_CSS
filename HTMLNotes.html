@@ -143,5 +143,73 @@
             Use headers, footers, and main tags to split up the page and make CSS application easier but only on headers and footers
         -->
 
+        <!--Forms-->
+        
+        <form action = "index.php" method = "POST" encryption = multipart/form-data> <!--action is where form goes--> <!--method, GET, POST, Get is for insensitive data, POST is for sensitive data-->
+        <!--To break up sending large file-->    
+
+            <label for = "Username">Username</label>
+            <input type = "text" id = "Username" placeholder = "Spongebob" minlength = "6" maxlength = "15" required> <!--Matching the for and id makes it so when you click the label in the browser it puts a cursor in the entry box, required means typing something in is required-->
+            
+            <!--Password-->
+            <br>
+            <label for = "Password">Password</label>
+            <input type = "Password" id = "Password" minlength = "6" maxlength = "15" required>
+
+            <!--Email-->
+            <br>
+            <label for = "Email">Email</label>
+            <input type = "email" id = "Email" placeholder="spongebob@squarepants.com">
+
+            <!--Phone-->
+            <br>
+            <label for = "Phone">Phone</label>
+            <input type = "tel" id = "Phone" placeholder="123-456-7890" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+            <br>
+            <label for = "bday">Birthdate</label>
+            <input type = "date" id = "bday">
+            
+            <br>
+            <label for = "quantity">Quantity</label>
+            <input type = "number" id = "Quantity" min = "0" max = "99" value = "1">
+
+            <br>
+            <label for = "Title">Title:</label>
+            <label for = "Mr.">Mr.</label>
+            <input type="radio" id = "Mr." value = "Mr." name = "title">
+            <label for = "Ms.">Ms.</label>
+            <input type="radio" id = "Ms." value = "Ms." name = "title">
+            <label for = "Phd.">Phd.</label>
+            <input type="radio" id = "Phd." value = "Phd." name = "title">
+
+            <br>
+            <label for = "payment">payment</label>
+            <select id = payment>
+                <option value = "visa">visa</option>
+                <option value = "mastercard">mastercard</option>
+                <option value = "giftcard">giftcard</option>
+            </select><br>
+
+            <label for = "subscribe">Subscribe</label>
+            <input type = "checkbox" id = subscribe>
+
+            <br>
+            <label for = "comment">Comment</label>
+            <textarea id = "comment" rows = "3" cols = "25"></textarea>
+            
+            <br>
+            <label for  = "file">File</label>
+            <input type = "file" id = "file" accept = "image/png, image/jpeg">
+
+            <br>
+            <input type = "reset"><br>
+            <input type = "submit">
+
+            
+
+        </form>
+
+
     </body>
 </html>
